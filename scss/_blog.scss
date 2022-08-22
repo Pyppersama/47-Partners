@@ -1,0 +1,126 @@
+.blog{
+    height:100%;
+    
+
+    &_header{
+        color:#fff;
+        background-color: darken($primary-color, 50%);
+        padding-bottom: 30px;
+        &Inner{
+            width:80%;
+            height:80px;
+            margin: 0 auto;
+            border-left: 5px solid #fff;
+            padding-top: 57px;
+            h4{
+                margin-left: 10px;
+                font-size: 20px;
+            }
+        }     
+    }
+    &_body{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        color:white;
+
+        h5{
+            margin-bottom: 40px;
+            font-size: 20px;
+        }
+        h6{
+            margin-top:100px;   
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        .blogger1{
+    		background: linear-gradient(
+                
+                rgba($primary-color, 0.6),
+                rgba($primary-color, 0.3)
+            ),url("../images/blog1.jpg");
+    		background-position:center;
+    		background-size:cover;
+    		height:300px;
+    		position: relative;
+            .bloggerWords{
+                padding: 20px 30px 0 100px;
+            }
+            .bloggerInner{
+                position:absolute;
+                width:80px;
+                height:80px;
+                top:0;
+                left:0;
+                background-color:$primary-color;
+                opacity:1;
+                .bloggerWordsTwo{
+                    padding: 20px 30px 0 100px;
+                    display:none;
+                }
+                .plus{
+                    margin-left:35px;
+                    margin-top:30px;
+                    background:white;
+                    height:20px;
+                    width:2px;
+                    display:block;
+                    transition:.5s;
+                }
+                .plusTwo{
+                background:white;
+                height:2px;
+                width:20px;
+                position:absolute;
+                top:39px;
+                left:26px;
+                transition:.5s;  
+                }
+            }
+    	}
+
+    	.blogger2{
+    	background-image: linear-gradient(
+                
+            rgba($primary-color, 0.6),
+            rgba($primary-color, 0.3)
+        ),url('../images/blog2.jpg');
+        background-position:center;
+    		background-size:cover;
+    	@extend .blogger1;
+        .bloggerWords2{
+            padding: 20px 30px 0 100px;
+        }
+    	}
+
+    	.blogger3{
+    	background:linear-gradient(
+                
+            rgba($primary-color, 0.6),
+            rgba($primary-color, 0.3)
+        ), url('../images/blog3.webp');
+        background-position:center;
+    		background-size:cover;
+    	@extend .blogger1;
+        .bloggerWords3{
+            padding: 20px 30px 0 100px;
+        }
+    	}
+
+    	.blogger4{
+    	background:linear-gradient(
+                
+            rgba($primary-color, 0.6),
+            rgba($primary-color, 0.3)
+        ), url('../images/blog4.jpg');
+        background-position:center;
+    		background-size:cover;
+    	@extend .blogger1;
+        .bloggerWords4{
+            padding: 20px 30px 0 100px;
+        }
+        }
+    }
+}

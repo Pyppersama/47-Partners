@@ -1,0 +1,88 @@
+.about{
+    height:100%;
+    padding-bottom: 80px;
+
+    &_header{
+        color:#fff;
+        background-color: darken($primary-color, 50%);
+        padding-bottom: 30px;
+        &Inner{
+            width:80%;
+            height:80px;
+            margin: 0 auto;
+            border-left: 5px solid #fff;
+            padding-top: 57px;
+            h4{
+                margin-left: 10px;
+                font-size: 20px;
+            }
+        }     
+    }
+
+    &_body{
+        width: 80%;
+        margin: 40px auto 90px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &Words{
+            flex-basis: 49%;
+            h2{
+                color:$primary-color;
+                font-weight: bold;
+            }
+            p{
+                line-height: 30px;
+            }
+        }
+        &Img{
+            img{
+                width: 40%;
+                position: absolute;
+                right:5px;
+            }
+        }
+    }
+
+    &_cards{
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 120px;
+
+        .cards{
+            height:350px;
+            transition: 1s;
+            .cardsInner{
+                text-align: center;
+        
+                .cardsIcon{
+                    margin-bottom: 30px;
+                    padding: 0 10px;
+                    height: 80px;
+                    .bi{
+                        font-size: 55px;
+                        color: $primary-color;
+                    }
+                }
+                .cardsWords{
+                    background-color: lighten($primary-color , 30%);
+                    padding: 20px 30px 40px;
+                    height: 250px;
+                    p{
+                        text-align: justify;
+                    }
+                    h5{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        
+        .cards:hover{
+            transform: scale(1.1);
+        }
+    }
+}
